@@ -1,0 +1,53 @@
+[
+  {
+    "path": "/",
+    "name": "home",
+    "component": "/Volumes/assets/拉勾前端/服务端渲染/nuxt-ssr/pages/App.vue",
+    "redirect": "/home",
+    "children": [
+      {
+        "path": "/home",
+        "name": "home",
+        "component": "/Volumes/assets/拉勾前端/服务端渲染/nuxt-ssr/pages/index.vue",
+        "_name": "_51f187a6"
+      },
+      {
+        "path": "/login",
+        "name": "login",
+        "component": "/Volumes/assets/拉勾前端/服务端渲染/nuxt-ssr/pages/login.vue",
+        "_name": "_1b992abd"
+      },
+      {
+        "path": "/register",
+        "name": "register",
+        "component": "/Volumes/assets/拉勾前端/服务端渲染/nuxt-ssr/pages/login.vue",
+        "_name": "_1b992abd"
+      },
+      {
+        "path": "/settings",
+        "name": "settings",
+        "component": "/Volumes/assets/拉勾前端/服务端渲染/nuxt-ssr/pages/settings.vue",
+        "_name": "_2dad3302"
+      },
+      {
+        "path": "/profile/:username",
+        "name": "profile",
+        "component": "/Volumes/assets/拉勾前端/服务端渲染/nuxt-ssr/pages/profile.vue",
+        "_name": "_d5b37406"
+      },
+      {
+        "path": "/article/:slug",
+        "name": "article",
+        "component": "/Volumes/assets/拉勾前端/服务端渲染/nuxt-ssr/pages/article.vue",
+        "_name": "_8957ca6c"
+      },
+      {
+        "path": "/article-form",
+        "name": "article-form",
+        "component": "/Volumes/assets/拉勾前端/服务端渲染/nuxt-ssr/pages/article-form.vue",
+        "_name": "_872fb0d2"
+      }
+    ],
+    "_name": "_31095055"
+  }
+]
