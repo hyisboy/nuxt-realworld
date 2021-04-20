@@ -59,4 +59,5 @@ jobs:
          rm -rf ./* 
          wget https://github.com/hyisboy/nuxt-realworld/releases/latest/download/release.tgz -O release.tgz
          tar zxvf release.tgz -m
+         pwd
          sh ./deploy.sh
