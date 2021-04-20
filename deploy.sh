@@ -1,1 +1,0 @@
-/usr/local/node/bin/npm install &&  pm2 reload pm2.config.json
