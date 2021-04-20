@@ -4,7 +4,8 @@
       <div class="container">
         <h1>{{ article.title }}</h1>
         <div class="article-meta">
-          <a href=""><img :src="article.author.image" /></a>
+          <nuxt-link
+              :to="`/profile/${article.author.username}`"><img :src="article.author.image" /></nuxt-link>
           <div class="info">
             <a href="" class="author">{{ article.author.username }}</a>
             <span class="date">{{ article.author.updatedAt }}</span>
@@ -77,7 +78,9 @@
       <hr />
       <div class="article-actions">
         <div class="article-meta">
-          <a href="profile.html"><img :src="article.author.image" /></a>
+          <nuxt-link
+              :to="`/profile/${article.author.username}`"
+             ><img :src="article.author.image" /></nuxt-link>
           <div class="info">
             <nuxt-link
               :to="`/profile/${article.author.username}`"
