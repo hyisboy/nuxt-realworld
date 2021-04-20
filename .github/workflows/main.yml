@@ -14,7 +14,7 @@ jobs:
     # 下载源码
     - name: Checkout
       uses: actions/checkout@master
-# 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
+# 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
     # 打包构建
     - name: Build
       uses: actions/setup-node@master
@@ -58,4 +58,6 @@ jobs:
           cd /home/www
           rm -rf ./*
           wget https://github.com/hyisboy/nuxt-realworld/releases/latest/download/release.tgz -O release.tgz
-          tar zxvf release.tgz && npm install --production && pm2 reload pm2.config.json
+          tar zxvf release.tgz 
+          npm install --production  
+          pm2 reload pm2.config.json
