@@ -29,8 +29,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       with:
-        tag_name: v1.3
-        release_name: Release v1.3
+        tag_name: ${{github.ref}}
+        release_name: Release ${{github.ref}}
         draft: false
         prerelease: false
 
@@ -59,6 +59,4 @@ jobs:
           rm -rf ./*
           wget https://github.com/hyisboy/nuxt-realworld/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz -m
-          cd /home/www
-          yarn 
-          pm2 reload pm2.config.json
+          npm install &&  pm2 reload pm2.config.json
